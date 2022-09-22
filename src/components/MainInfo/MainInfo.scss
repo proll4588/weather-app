@@ -1,0 +1,111 @@
+.MainInfo {
+    & {
+        @include neo();
+
+        width: calc(400px - 55px);
+
+        padding: 20px;
+    }
+
+    &__container {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__icon-container {
+        @include neoDown();
+
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__WeatherIcon {
+        font-size: 40px;
+    }
+
+    //TODO: Сделать свечение
+    &__icon {
+        font-size: 50px;
+    }
+
+    &__tempt-data {
+        color: $text-color-light;
+        width: 111px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-size: 17.5px;
+    }
+
+    &__main-temp {
+        font-size: 50px;
+        color: $text-color-strong;
+    }
+
+    &__min-max {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__line-container {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__line {
+        width: 90%;
+        height: 5px;
+
+        margin: 10px 0;
+
+        @include neoDown();
+    }
+
+    &__bottom {
+        color: $text-color-light;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 18px;
+    }
+
+    &__fills-like {
+    }
+
+    &__min-icon {
+        color: deepskyblue;
+    }
+
+    &__max-icon {
+        color: orangered;
+    }
+}
+
+.icon {
+    font-size: 18px;
+}

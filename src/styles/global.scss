@@ -1,0 +1,20 @@
+@import "./vars.scss";
+@import "./mixins.scss";
+@import "./fonts//fonts.scss";
+
+body {
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    font-family: Avenir, serif;
+    background-color: $background-color-50;
+}
+
+@import "../components/MainInfo/MainInfo.scss";
+@import "../Layout";
+@import "../components/WeatherIcon/WeatherIcon";
+@import "../components/WeatherDay/WeatherDay";
+@import "../components/WeatherDay/WeatherDayCard/WeatherDayCard";
+@import "../components/WeatherDay/WeatherDayCardNow/WeatherDayCardNow";
+@import "../components/WeatherWeek/WeatherWeek";
+@import "../components/WeatherWeek/WeatherWeekCard/WeatherWeekCard";

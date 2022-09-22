@@ -1,0 +1,63 @@
+.WeatherDayCard {
+  & {
+    @include neoDown();
+    border-radius: 10px;
+    color: $text-color-light;
+  }
+  &__container {
+    width: 90px;
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  &__time {
+    margin-top: 10px;
+  }
+  &__temp {
+    position: relative;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    &:after {
+      content: "°";
+      position: absolute;
+    }
+  }
+  &__weather {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__weather-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include neo();
+    border-radius: 0 10px 0 10px;
+
+    width: 30px;
+    height: 30px;
+  }
+  &__WeatherIcon {
+    color: $text-color-strong;
+  }
+  &__weather-name-container {
+    width: calc(100% - 30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__weather-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

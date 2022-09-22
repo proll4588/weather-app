@@ -1,0 +1,29 @@
+.WeatherWeek {
+  & {
+    width: 100vw;
+  }
+  &__container {
+    padding: 15px 0;
+
+    overflow: auto;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  &__WeatherWeekCard {
+    &:first-child {
+      margin-left: 15px;
+    }
+    &:last-child {
+      margin-right: 15px;
+    }
+  }
+  &__name {
+    font-weight: bold;
+    margin-left: 15px;
+  }
+}

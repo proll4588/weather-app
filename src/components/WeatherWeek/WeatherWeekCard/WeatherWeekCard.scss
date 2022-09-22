@@ -1,0 +1,26 @@
+.WeatherWeekCard {
+  & {
+    @include neo();
+    color: $text-color-strong;
+  }
+  &__container {
+    width: 130px;
+    height: 130px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+  }
+  &__date {
+    font-weight: bold;
+  }
+  &__weatherIcon {}
+  &__WeatherIcon {
+    font-size: 35px;
+  }
+  &__temp {
+    font-weight: bold;
+  }
+}
